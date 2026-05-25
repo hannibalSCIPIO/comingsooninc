@@ -258,6 +258,17 @@
             align-items: center;
             gap: 8px;
         }
+        .option h3 {
+            text-decoration: none;
+        }
+        .option h3 a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .option h3 a:hover {
+            color: var(--accent);
+        }
         .option h3::before {
             content: '✓';
             color: var(--secondary);
@@ -406,13 +417,15 @@
             <h2>Home Retention Options</h2>
             <div class="options-grid">
                 <div class="option">
-                    <h3>Loan Modification</h3>
+                    <h3><a href="loan-modification.html">Loan Modification</a></h3>
                     <p>Adjusting your original loan terms—lowering your interest rate or extending the loan length—to permanently reduce your monthly payment.</p>
+                    <p style="margin-top:12px;font-size:0.9rem;color:var(--accent);font-weight:600;">Call us today so we can help set up an appointment.</p>
                 </div>
                 
                 <div class="option">
-                    <h3>Forbearance</h3>
+                    <h3><a href="forbearance.html">Forbearance</a></h3>
                     <p>Temporarily pausing or reducing your payments for a set period while you get back on your feet.</p>
+                    <p style="margin-top:12px;font-size:0.9rem;color:var(--accent);font-weight:600;">Call us today so we can help set up an appointment.</p>
                 </div>
                 
                 <div class="option">
@@ -426,13 +439,15 @@
             <h2>Non-Retention Options</h2>
             <div class="options-grid">
                 <div class="option">
-                    <h3>Short Sale</h3>
+                    <h3><a href="short-sale.html">Short Sale</a></h3>
                     <p>Selling the home for less than the remaining mortgage balance, with your lender's agreement to accept the proceeds to settle the debt.</p>
+                    <p style="margin-top:12px;font-size:0.9rem;color:var(--accent);font-weight:600;">Call us today so we can help set up an appointment.</p>
                 </div>
                 
                 <div class="option">
-                    <h3>Deed-in-Lieu of Foreclosure</h3>
+                    <h3><a href="deed-in-lieu.html">Deed-in-Lieu of Foreclosure</a></h3>
                     <p>Voluntarily transferring ownership of the property back to the lender to avoid a formal foreclosure process.</p>
+                    <p style="margin-top:12px;font-size:0.9rem;color:var(--accent);font-weight:600;">Call us today so we can help set up an appointment.</p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deed in Lieu of Foreclosure - Coming Soon Inc</title>
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0a2540;
+            --secondary: #00d4aa;
+            --accent: #00a8cc;
+            --light: #f7f9fc;
+            --text: #334e68;
+            --white: #ffffff;
+            --bg-cream: #f5f1e7;
+        }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--light);
+        }
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(ellipse at 20% 50%, rgba(0, 212, 170, 0.08) 0%, transparent 50%),
+                        radial-gradient(ellipse at 80% 20%, rgba(0, 168, 204, 0.08) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+        
+        header {
+            background: var(--bg-cream);
+            box-shadow: 0 2px 20px rgba(10, 37, 64, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--primary);
+        }
+        .logo img { height: 45px; border-radius: 8px; }
+        .logo h1 { font-size: 1.4rem; font-weight: 700; }
+        .header-contact a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin: 30px 0 0 30px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover { text-decoration: underline; }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 30px 60px;
+        }
+        .page-title {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .page-title::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: #ff6b6b;
+            border-radius: 50%;
+        }
+        .content-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(10, 37, 64, 0.06);
+            margin-bottom: 30px;
+        }
+        .content-card h2 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ff6b6b;
+        }
+        .content-card h2:first-child { margin-top: 0; }
+        .content-card p { margin-bottom: 15px; color: #555; }
+        .content-card ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        .content-card li { margin-bottom: 10px; color: #555; }
+        
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a3a5c 100%);
+            color: var(--white);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+        }
+        .cta-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+        .cta-box p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+        .cta-button {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 212, 170, 0.4);
+        }
+        
+        footer {
+            background: var(--primary);
+            color: var(--white);
+            padding: 30px;
+            text-align: center;
+        }
+        footer a { color: var(--secondary); text-decoration: none; }
+        
+        @media (max-width: 600px) {
+            .header-inner { flex-direction: column; gap: 15px; }
+            .page-title { font-size: 1.6rem; }
+            .content-card { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="Coming Soon Inc">
+                <h1>Coming Soon Inc</h1>
+            </a>
+            <div class="header-contact">
+                <a href="tel:4355358292">435-535-8292</a>
+                <a href="mailto:info@comingsooninc.com">info@comingsooninc.com</a>
+            </div>
+        </div>
+    </header>
+    
+    <a href="index.html" class="back-link">← Back to Home</a>
+    
+    <div class="container">
+        <h1 class="page-title">Deed in Lieu of Foreclosure</h1>
+        
+        <div class="content-card">
+            <p>A <strong>deed in lieu of foreclosure</strong> is a deed instrument in which a mortgagor (the borrower) conveys all interest in a real property to the mortgagee (the lender) to satisfy a loan that is in default and avoid foreclosure proceedings.</p>
+            
+            <h2>How It Works</h2>
+            <p>In a deed in lieu of foreclosure:</p>
+            <ul>
+                <li>The homeowner voluntarily transfers ownership of the property back to the lender</li>
+                <li>The lender accepts the property in exchange for canceling the mortgage debt</li>
+                <li>This avoids the formal foreclosure process entirely</li>
+                <li>The homeowner vacates the property willingly</li>
+            </ul>
+            
+            <h2>Requirements</h2>
+            <p>To be approved for a deed in lieu, you typically need to:</p>
+            <ul>
+                <li>Demonstrate a valid financial hardship</li>
+                <li>Show that you cannot afford to keep the home or sell it traditionally</li>
+                <li>Have not started foreclosure proceedings yet</li>
+                <li>Be willing to vacate the property</li>
+                <li>Show the property is in acceptable condition</li>
+            </ul>
+            
+            <h2>Advantages</h2>
+            <ul>
+                <li><strong>Avoid Foreclosure</strong> — The most significant benefit is avoiding the formal foreclosure process entirely</li>
+                <li><strong>Less Credit Damage</strong> — While it still impacts credit, it's generally less damaging than a foreclosure</li>
+                <li><strong>Faster Process</strong> — Can be completed more quickly than a foreclosure</li>
+                <li><strong>More Dignified</strong> — A voluntary transfer is often less stressful than a foreclosure</li>
+                <li><strong>Move On Faster</strong> — Allows you to move on with your life sooner</li>
+                <li><strong>No Auction</strong> — Avoids the public auction process</li>
+            </ul>
+            
+            <h2>Considerations</h2>
+            <ul>
+                <li>The lender must agree to the arrangement</li>
+                <li>You will need to vacate the property</li>
+                <li>You may need to provide documentation of your hardship</li>
+                <li>Some lenders may require a partial payment or cash for keys</li>
+                <li>The forgiven debt may be considered taxable income</li>
+                <li>You may not be eligible for another mortgage for a period of time (typically 2-5 years)</li>
+            </ul>
+            
+            <h2>Deed in Lieu vs. Foreclosure</h2>
+            <p>Both options result in losing your home, but a deed in lieu is generally preferred because:</p>
+            <ul>
+                <li>It's a voluntary process, not a forced one</li>
+                <li>It typically has less negative impact on your credit</li>
+                <li>It may allow you to qualify for new financing sooner</li>
+                <li>It's completed faster and with less stress</li>
+            </ul>
+            
+            <h2>Is It Right for You?</h2>
+            <p>A deed in lieu may be ideal if you:</p>
+            <ul>
+                <li>Can no longer afford your mortgage payments</li>
+                <li>Cannot sell the home through traditional means or a short sale</li>
+                <li>Have not yet started foreclosure proceedings</li>
+                <li>Are willing to vacate the property</li>
+                <li>Want to avoid the stigma and process of foreclosure</li>
+            </ul>
+        </div>
+        
+        <div class="cta-box">
+            <h3>Ready to Explore Your Options?</h3>
+            <p>If you're considering a deed in lieu of foreclosure, we can help you understand the process and determine if it's the right solution for your situation. Call us today to schedule a free consultation.</p>
+            <a href="tel:4355358292" class="cta-button">Call 435-535-8292</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2026 Coming Soon Inc. All rights reserved. | <a href="index.html">Home</a></p>
+    </footer>
+</body>
+</html>

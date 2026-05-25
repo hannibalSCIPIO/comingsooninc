@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Modification - Coming Soon Inc</title>
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0a2540;
+            --secondary: #00d4aa;
+            --accent: #00a8cc;
+            --light: #f7f9fc;
+            --text: #334e68;
+            --white: #ffffff;
+            --bg-cream: #f5f1e7;
+        }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--light);
+        }
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(ellipse at 20% 50%, rgba(0, 212, 170, 0.08) 0%, transparent 50%),
+                        radial-gradient(ellipse at 80% 20%, rgba(0, 168, 204, 0.08) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+        
+        header {
+            background: var(--bg-cream);
+            box-shadow: 0 2px 20px rgba(10, 37, 64, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--primary);
+        }
+        .logo img { height: 45px; border-radius: 8px; }
+        .logo h1 { font-size: 1.4rem; font-weight: 700; }
+        .header-contact a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin: 30px 0 0 30px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover { text-decoration: underline; }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 30px 60px;
+        }
+        .page-title {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .page-title::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: var(--secondary);
+            border-radius: 50%;
+        }
+        .content-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(10, 37, 64, 0.06);
+            margin-bottom: 30px;
+        }
+        .content-card h2 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary);
+        }
+        .content-card h2:first-child { margin-top: 0; }
+        .content-card p { margin-bottom: 15px; color: #555; }
+        .content-card ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        .content-card li { margin-bottom: 10px; color: #555; }
+        
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a3a5c 100%);
+            color: var(--white);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+        }
+        .cta-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+        .cta-box p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+        .cta-button {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 212, 170, 0.4);
+        }
+        
+        footer {
+            background: var(--primary);
+            color: var(--white);
+            padding: 30px;
+            text-align: center;
+        }
+        footer a { color: var(--secondary); text-decoration: none; }
+        
+        @media (max-width: 600px) {
+            .header-inner { flex-direction: column; gap: 15px; }
+            .page-title { font-size: 1.6rem; }
+            .content-card { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="Coming Soon Inc">
+                <h1>Coming Soon Inc</h1>
+            </a>
+            <div class="header-contact">
+                <a href="tel:4355358292">435-535-8292</a>
+                <a href="mailto:info@comingsooninc.com">info@comingsooninc.com</a>
+            </div>
+        </div>
+    </header>
+    
+    <a href="index.html" class="back-link">← Back to Home</a>
+    
+    <div class="container">
+        <h1 class="page-title">Loan Modification</h1>
+        
+        <div class="content-card">
+            <p>A <strong>loan modification</strong> is a process where the terms of a mortgage are modified outside the original terms of the contract agreed to by the lender and borrower. In general, any loan can be modified, and the process is referred to as loan modification or debt rescheduling.</p>
+            
+            <h2>How It Works</h2>
+            <p>In the normal progression of a mortgage, payments are made according to the loan documents until the mortgage is paid in full. The lender holds a lien on the property. Any change to the mortgage terms is a modification.</p>
+            
+            <h2>Common Modifications</h2>
+            <p>Changes may include any of the following:</p>
+            <ul>
+                <li><strong>Interest Rate Reduction</strong> — Lowering the interest rate to reduce monthly payments</li>
+                <li><strong>Extended Term</strong> — Extending a 30-year term to a 40-year term to lower payments</li>
+                <li><strong>Principal Reduction</strong> — Reducing the principal balance of the loan</li>
+                <li><strong>Convertible Terms</strong> — Switching from adjustable to fixed-rate mortgages</li>
+            </ul>
+            
+            <h2>Home Affordable Modification Program (HAMP)</h2>
+            <p>Following the 2007 real estate recession, the government mandated the Making Home Affordable (MHA) program. Under this program:</p>
+            <ul>
+                <li>The lender receives a fixed interest rate</li>
+                <li>The borrower gets a lower loan payment</li>
+                <li>Often includes an extended term</li>
+                <li>Sometimes includes principal reduction if the property is "upside down"</li>
+            </ul>
+            
+            <h2>Is It Right for You?</h2>
+            <p>Loan modification is ideal for homeowners who:</p>
+            <ul>
+                <li>Have experienced a significant reduction in income</li>
+                <li>Have a hardship that is permanent or long-term</li>
+                <li>Want to stay in their home long-term</li>
+                <li>Can no longer afford their current mortgage payment</li>
+            </ul>
+        </div>
+        
+        <div class="cta-box">
+            <h3>Ready to Explore Your Options?</h3>
+            <p>Our experienced team can help determine if loan modification is the right solution for your situation. Call us today to schedule a free consultation.</p>
+            <a href="tel:4355358292" class="cta-button">Call 435-535-8292</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2026 Coming Soon Inc. All rights reserved. | <a href="index.html">Home</a></p>
+    </footer>
+</body>
+</html>
